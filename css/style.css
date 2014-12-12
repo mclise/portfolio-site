@@ -1,0 +1,157 @@
+@font-face {
+  font-family: nobile;
+  src: url(../fonts/Nobile-Medium.ttf);
+}
+
+@font-face {
+  font-family: quicksand;
+  src: url(../fonts/Quicksand-Bold.otf);
+}
+
+@font-face {
+  font-family: dense;
+  src: url(../fonts/Dense-Regular.otf);
+}
+
+body {
+  margin: 0 0 0 0;
+}
+
+.intro .section-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+.centered-description {
+  font-family: dense;
+  font-size: 2.5em;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.headshot {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: url(../images/me.jpg) no-repeat center;
+}
+
+.intro {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url(../images/bg1.jpg) no-repeat top center;
+  background-size: cover;
+  padding: 50% 0 0 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: inline-block;
+  padding: 8px 15px;
+  text-decoration: none;
+  font-family: dense;
+  font-size: 2em;
+  color: #575757;
+}
+
+.section-title {
+  width: 75%;
+  margin: 0 auto;
+  padding: .25em 0 .1em;
+  font-family: dense;
+  font-size: 7em;
+  text-align: center;
+  border-top: 1px solid gray;
+}
+
+.slogan {
+  color: white;
+  text-shadow: 
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 65px;
+  padding: 0.5em 0 0.5em;
+  font-size: 2em;
+}
+
+.description {
+  font-family: dense;
+  font-size: 2.5em;
+  text-align: center;
+  padding: 1em 0 1em;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.description h1 {
+  margin-top: 0;
+}
+
+.project-image{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact img {
+  height: 64px;
+  width: 64px;
+}
+
+.social-media {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 5px;
+}
+
+.attribute {
+  font-size: 10px;
+}
+
+.container{
+    text-align: center;
+}
+
+.last {
+  margin-bottom: 2.5em;
+}
