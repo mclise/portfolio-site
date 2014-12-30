@@ -160,7 +160,7 @@ body {
 
 /* --- Media Queries --- */
 
-@media (max-width: 920px) {
+@media (max-width: 920px), (max-device-width: 920px) {
 
   .centered-description {
     font-family: dense;
@@ -250,7 +250,7 @@ body {
 
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px), (max-device-width: 480px) {
 
   .centered-description {
     font-family: dense;
@@ -283,6 +283,59 @@ body {
 
   .attribute {
     font-size: 6px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobileMenuBtn {
+    display: inline;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 15;
+  }
+
+  .mobileMenuBtn img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .mobileNavBar {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+
+  .mobileNavBar ul {
+    list-style-type: none; 
+    background-color: white;
+    padding-left: 0px;
+    margin: 0px;
+  }
+
+  .mobileNavBar li {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+  }
+
+  .mobileNavBar li a {
+    display: block;
+    text-decoration: none;
+    font-family: dense;
+    font-size: 2em;
+    color: #575757;
+    background-color: white;
+  }
+
+  .hide {
+    display: none;
   }
 
 }
