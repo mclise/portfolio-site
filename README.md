@@ -5,7 +5,7 @@ Super simple portfolio site. Nothing fancy, just wanted to get it together quick
 To do list:
 
 1. Clean up css and html
-2. Make responsive
+2. ~~Make responsive~~
 3. Move project examples to my site
 4. Add more content
 
