@@ -1,14 +1,4 @@
 @font-face {
-  font-family: nobile;
-  src: url(../fonts/Nobile-Medium.ttf);
-}
-
-@font-face {
-  font-family: quicksand;
-  src: url(../fonts/Quicksand-Bold.otf);
-}
-
-@font-face {
   font-family: dense;
   src: url(../fonts/Dense-Regular.otf);
 }
@@ -154,4 +144,145 @@ body {
 
 .last {
   margin-bottom: 2.5em;
+}
+
+.mobileMenuBtn {
+  display: none;
+}
+
+.mobileNavBar {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+/* --- Media Queries --- */
+
+@media screen and (max-width: 920px) {
+
+  .centered-description {
+    font-family: dense;
+    font-size: 2em;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .section-title {
+    width: 75%;
+    margin: 0 auto;
+    padding: .25em 0 .5em;
+    font-family: dense;
+    font-size: 5em;
+    text-align: center;
+    border-top: 1px solid gray;
+  }
+
+  .description {
+    font-family: dense;
+    font-size: 2em;
+    text-align: center;
+    padding: 1em 0 1em;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .attribute {
+    font-size: 8px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobileMenuBtn {
+    display: inline;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 15;
+  }
+
+  .mobileMenuBtn img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .mobileNavBar {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+  }
+
+  .mobileNavBar ul {
+    list-style-type: none; 
+    background-color: white;
+    padding-left: 0px;
+    margin: 0px;
+  }
+
+  .mobileNavBar li {
+    display: block;
+    width: 120px;
+    height: 40px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+  }
+
+  .mobileNavBar li a {
+    display: block;
+    text-decoration: none;
+    font-family: dense;
+    font-size: 2em;
+    color: #575757;
+    background-color: white;
+  }
+
+  .hide {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+  .centered-description {
+    font-family: dense;
+    font-size: 1.5em;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .section-title {
+    width: 75%;
+    margin: 0 auto;
+    padding: .25em 0 .5em;
+    font-family: dense;
+    font-size: 3em;
+    text-align: center;
+    border-top: 1px solid gray;
+  }
+
+  .description {
+    font-family: dense;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em 0 1em;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  .attribute {
+    font-size: 6px;
+  }
+
 }

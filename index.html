@@ -6,9 +6,25 @@
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- JQuery -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 
 <body>
+
+  <!-- Mobile Nav Bar -->
+    <button class="mobileMenuBtn"><img src="images/menu-button.svg"></button>
+    <nav class="mobileNavBar hide">
+      <ul>
+        <li><a href="#intro">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="docs/MatthewCliseResume.pdf">RESUME</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  <!-- /Mobile Nav Bar -->
   
   <!-- Navigation Bar -->
     <nav class="navbar" role="navigation">
@@ -62,6 +78,16 @@
       <div class="description attribute">Icons made by Dave Gandy from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>         is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
     </section>
   <!-- /Section: contact -->
+
+  <!-- Script for Mobile Menu Button -->
+  <script>
+    $(document).ready(function (){
+      $(".mobileMenuBtn, .mobileNavBar").click(function(){
+        $(".mobileNavBar").toggleClass("hide");
+      });
+    });
+  </script>
+  <!-- /Script -->
 
 </body>
 </html>
