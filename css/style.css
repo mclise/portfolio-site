@@ -160,7 +160,7 @@ body {
 
 /* --- Media Queries --- */
 
-@media screen and (max-width: 920px) {
+@media (max-width: 920px) {
 
   .centered-description {
     font-family: dense;
@@ -250,7 +250,7 @@ body {
 
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
   .centered-description {
     font-family: dense;
