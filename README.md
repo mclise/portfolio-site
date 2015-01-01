@@ -8,6 +8,7 @@ To do list:
 2. ~~Make responsive~~
 3. Move project examples to my site
 4. Add more content
+5. Fix fonts/media queries for IE
 
 More will likely be added to the list.
 
